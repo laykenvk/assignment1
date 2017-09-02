@@ -25,7 +25,7 @@ if(!empty(filter_input(INPUT_POST, 'submit'))) {
 	while ($stmt->fetch()) {} // fill result variables
 	
 	if (password_verify($pw, $pwhash)){
-		header ('Location: logged-in.php');
+		echo("<script>location.href = 'http://laykenvk.dk/login/logged-in.php';</script>"); //Redirects after submitting form data
 		$_SESSION['uid'] = $uid;
 		$_SESSION['un'] = $un;
 	}
