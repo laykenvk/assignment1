@@ -22,9 +22,9 @@ session_start();
     
     ?>
     
-    <div id="wrapper">
-        <a href="logout.php" style="text-decoration:none; color:black; text-align:center;"><p id="button">Logout</p></a>
-    </div>
+    <fieldset id="form">
+        <a href="logout.php" style="text-decoration:none; color:black; text-align:center;"><p>Logout</p></a>
+    </fieldset>
     
 </body>
 </html>
